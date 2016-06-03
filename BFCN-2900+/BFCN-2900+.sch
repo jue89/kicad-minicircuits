@@ -31,8 +31,9 @@ LIBS:valves
 LIBS:mc-amplifiers
 LIBS:mc-attenuators
 LIBS:mc-filters
-LIBS:mc-misc
 LIBS:mc-mixers
+LIBS:JueConnectors
+LIBS:BFCN-2900+-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -47,28 +48,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L SMA-BU X1
-U 1 1 575036BC
-P 4950 3600
-F 0 "X1" H 5200 3650 60  0000 L CNN
-F 1 "SMA-BU" H 5200 3550 60  0000 L CNN
-F 2 "MiniCircuits:SMA-BU-P" H 4950 3600 60  0001 C CNN
-F 3 "" H 4950 3600 60  0000 C CNN
-	1    4950 3600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L SMA-BU X2
-U 1 1 5750374B
-P 6950 3600
-F 0 "X2" H 7200 3650 60  0000 L CNN
-F 1 "SMA-BU" H 7200 3550 60  0000 L CNN
-F 2 "MiniCircuits:SMA-BU-P" H 6950 3600 60  0001 C CNN
-F 3 "" H 6950 3600 60  0000 C CNN
-	1    6950 3600
-	1    0    0    -1  
-$EndComp
 $Comp
 L BFCN-2900+ U1
 U 1 1 57503764
@@ -128,4 +107,26 @@ Wire Wire Line
 	5150 3600 5350 3600
 Wire Wire Line
 	6550 3600 6750 3600
+$Comp
+L SMA-F X1
+U 1 1 57518E72
+P 4950 3600
+F 0 "X1" H 5200 3650 60  0000 L CNN
+F 1 "SMA-F" H 5200 3550 60  0000 L CNN
+F 2 "JueConnectors:SMA-F-THT" H 4950 3600 60  0001 C CNN
+F 3 "" H 4950 3600 60  0000 C CNN
+	1    4950 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SMA-F X2
+U 1 1 57518F01
+P 6950 3600
+F 0 "X2" H 7200 3650 60  0000 L CNN
+F 1 "SMA-F" H 7200 3550 60  0000 L CNN
+F 2 "JueConnectors:SMA-F-THT" H 6950 3600 60  0001 C CNN
+F 3 "" H 6950 3600 60  0000 C CNN
+	1    6950 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Do 02 Jun 2016 15:37:52 CEST
+update=Fr 03 Jun 2016 16:04:02 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/jue/Circuits/KiCadLibs/Mini-Circuits/library
+LibDir=/home/jue/Circuits/KiCadLibs/Mini-Circuits/library;/home/jue/Circuits/KiCadLibs/Jue/library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,5 +61,5 @@ LibName29=valves
 LibName30=mc-amplifiers
 LibName31=mc-attenuators
 LibName32=mc-filters
-LibName33=mc-misc
-LibName34=mc-mixers
+LibName33=mc-mixers
+LibName34=JueConnectors

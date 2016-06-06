@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.2+e4-6225~38~ubuntu15.10.1-stable)
 
   (general
-    (links 87)
+    (links 148)
     (no_connects 0)
-    (area 82.420143 88.471 185.643002 133.941002)
+    (area 82.420143 88.471 185.643002 121.351)
     (thickness 1.6)
     (drawings 28)
     (tracks 10)
     (zones 0)
-    (modules 142)
+    (modules 145)
     (nets 4)
   )
 
@@ -115,6 +115,42 @@
     (uvia_drill 0.1)
     (add_net "Net-(U1-Pad1)")
     (add_net "Net-(U1-Pad3)")
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 575191BF) (tstamp 57554AF9)
+    (at 143.396 96.604)
+    (fp_text reference REF**1191 (at 0 -1) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 575191BF) (tstamp 57554AF4)
+    (at 146.19 97.62)
+    (fp_text reference REF**1191 (at 0 -1) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 575191BF) (tstamp 57554AEE)
+    (at 142.38 93.81)
+    (fp_text reference REF**1191 (at 0 -1) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GNDA))
   )
 
   (module JueVias:VIA-0.3 (layer F.Cu) (tedit 575191BF) (tstamp 575196C1)

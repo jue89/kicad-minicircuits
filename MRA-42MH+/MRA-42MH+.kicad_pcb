@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.2+e4-6225~38~ubuntu15.10.1-stable)
 
   (general
-    (links 191)
-    (no_connects 35)
-    (area 89.924999 89.924999 150.075001 120.075001)
+    (links 208)
+    (no_connects 4)
+    (area 82.392143 88.485 180.225002 1121.34)
     (thickness 1.6)
     (drawings 12)
     (tracks 35)
     (zones 0)
-    (modules 191)
+    (modules 183)
     (nets 10)
   )
 
@@ -492,102 +492,6 @@
   (module JueVias:VIA-0.3 (layer B.Cu) (tedit 57515DE1) (tstamp 57559AD1)
     (at 126.096 106.27)
     (fp_text reference REF**23111 (at 0 1.27) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value VIA-0.3 (at 0 -1.397) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
-      (net 1 GNDA))
-  )
-
-  (module JueVias:VIA-0.3 (layer B.Cu) (tedit 57515DE1) (tstamp 57559AC8)
-    (at 126.096 1119.095)
-    (fp_text reference REF**23115 (at 0 1.27) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value VIA-0.3 (at 0 -1.397) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
-      (net 1 GNDA))
-  )
-
-  (module JueVias:VIA-0.3 (layer B.Cu) (tedit 57515DE1) (tstamp 57559AC4)
-    (at 126.096 865.095)
-    (fp_text reference REF**23114 (at 0 1.27) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value VIA-0.3 (at 0 -1.397) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
-      (net 1 GNDA))
-  )
-
-  (module JueVias:VIA-0.3 (layer B.Cu) (tedit 57515DE1) (tstamp 57559AC0)
-    (at 126.096 611.095)
-    (fp_text reference REF**23113 (at 0 1.27) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value VIA-0.3 (at 0 -1.397) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
-      (net 1 GNDA))
-  )
-
-  (module JueVias:VIA-0.3 (layer B.Cu) (tedit 57515DE1) (tstamp 57559ABC)
-    (at 126.096 357.095)
-    (fp_text reference REF**23112 (at 0 1.27) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value VIA-0.3 (at 0 -1.397) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
-      (net 1 GNDA))
-  )
-
-  (module JueVias:VIA-0.3 (layer B.Cu) (tedit 57515DE1) (tstamp 57559AB4)
-    (at 126.096 1119.095)
-    (fp_text reference REF**2315 (at 0 1.27) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value VIA-0.3 (at 0 -1.397) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
-      (net 1 GNDA))
-  )
-
-  (module JueVias:VIA-0.3 (layer B.Cu) (tedit 57515DE1) (tstamp 57559AB0)
-    (at 126.096 865.095)
-    (fp_text reference REF**2314 (at 0 1.27) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value VIA-0.3 (at 0 -1.397) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
-      (net 1 GNDA))
-  )
-
-  (module JueVias:VIA-0.3 (layer B.Cu) (tedit 57515DE1) (tstamp 57559AAC)
-    (at 126.096 611.095)
-    (fp_text reference REF**2313 (at 0 1.27) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value VIA-0.3 (at 0 -1.397) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
-      (net 1 GNDA))
-  )
-
-  (module JueVias:VIA-0.3 (layer B.Cu) (tedit 57515DE1) (tstamp 57559AA8)
-    (at 126.096 357.095)
-    (fp_text reference REF**2312 (at 0 1.27) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value VIA-0.3 (at 0 -1.397) (layer B.Fab) hide
@@ -2658,7 +2562,7 @@
   (gr_text 3V (at 114.539 110.842) (layer F.SilkS) (tstamp 575599E4)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify right))
   )
-  (gr_text "L13 Mixer    IP3 (OUT): 26dBm\nLO/RF: 1000..4200, IF: 10..800" (at 116.444 94.332) (layer F.SilkS)
+  (gr_text "L13 Mixer    IP3 (OUT): 24dBm\nLO/RF: 1000..4200, IF: 10..800" (at 116.444 94.332) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
   (gr_text IF (at 139.304 110.969) (layer F.SilkS) (tstamp 57558F6B)

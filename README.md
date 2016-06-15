@@ -6,4 +6,6 @@ Some parts from [Mini-Circuits®](http://www.minicircuits.com) brought onto two-
 
 ```
 git clone --recursive https://github.com/jue89/kicad-minicircuits.git
+cd kicad-minicircuitskicad-minicircuits
+./setup.sh
 ```

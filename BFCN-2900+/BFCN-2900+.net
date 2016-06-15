@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/jue/Circuits/MiniCircuitsBoards/BFCN-2900+/BFCN-2900+.sch)
+    (source ../BFCN-2900+/BFCN-2900+.sch)
     (date "Fr 03 Jun 2016 16:04:43 CEST")
     (tool "Eeschema 4.0.2+e4-6225~38~ubuntu15.10.1-stable")
     (sheet (number 1) (name /) (tstamps /)
@@ -58,9 +58,9 @@
         (pin (num HF) (name HF) (type input)))))
   (libraries
     (library (logical JueConnectors)
-      (uri /home/jue/Circuits/KiCadLibs/Jue/library/JueConnectors.lib))
+      (uri ../.libs/kicad-lib-jue/library/JueConnectors.lib))
     (library (logical mc-filters)
-      (uri /home/jue/Circuits/KiCadLibs/Mini-Circuits/library/mc-filters.lib)))
+      (uri ../.libs/kicad-lib-minicircuits/library/mc-filters.lib)))
   (nets
     (net (code 1) (name GNDA)
       (node (ref U1) (pin 2))

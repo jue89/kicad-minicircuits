@@ -1,0 +1,6 @@
+[submodule ".libs/kicad-lib-minicircuits"]
+	path = .libs/kicad-lib-minicircuits
+	url = https://github.com/jue89/kicad-lib-minicircuits.git
+[submodule ".libs/kicad-lib-jue"]
+	path = .libs/kicad-lib-jue
+	url = https://github.com/jue89/kicad-lib-jue.git

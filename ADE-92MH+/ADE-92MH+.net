@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/jue/Circuits/MiniCircuitsBoards/ADE-92MH+/ADE-92MH+.sch)
+    (source ../ADE-92MH+/ADE-92MH+.sch)
     (date "Di 07 Jun 2016 12:33:00 CEST")
     (tool "Eeschema 4.0.2+e4-6225~38~ubuntu15.10.1-stable")
     (sheet (number 1) (name /) (tstamps /)
@@ -64,9 +64,9 @@
         (pin (num HF) (name HF) (type input)))))
   (libraries
     (library (logical JueConnectors)
-      (uri /home/jue/Circuits/KiCadLibs/Jue/library/JueConnectors.lib))
+      (uri ../.libs/kicad-lib-jue/library/JueConnectors.lib))
     (library (logical mc-mixers)
-      (uri /home/jue/Circuits/KiCadLibs/Mini-Circuits/library/mc-mixers.lib)))
+      (uri ../.libs/kicad-lib-minicircuits/library/mc-mixers.lib)))
   (nets
     (net (code 1) (name GNDA)
       (node (ref X1) (pin GND))

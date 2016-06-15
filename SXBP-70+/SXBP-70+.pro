@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/jue/Circuits/KiCadLibs/Mini-Circuits/library;/home/jue/Circuits/KiCadLibs/Jue/library
+LibDir=../.libs/kicad-lib-minicircuits/library;../.libs/kicad-lib-jue/library
 [eeschema/libraries]
 LibName1=power
 LibName2=device

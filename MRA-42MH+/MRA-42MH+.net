@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/jue/Circuits/MiniCircuitsBoards/MRA-42MH+/MRA-42MH+.sch)
+    (source ../MRA-42MH+/MRA-42MH+.sch)
     (date "Mo 06 Jun 2016 16:25:34 CEST")
     (tool "Eeschema 4.0.2+e4-6225~38~ubuntu15.10.1-stable")
     (sheet (number 1) (name /) (tstamps /)
@@ -167,13 +167,13 @@
         (pin (num HF) (name HF) (type input)))))
   (libraries
     (library (logical mc-mixers)
-      (uri /home/jue/Circuits/KiCadLibs/Mini-Circuits/library/mc-mixers.lib))
+      (uri ../.libs/kicad-lib-minicircuits/library/mc-mixers.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
     (library (logical JueConnectors)
-      (uri /home/jue/Circuits/KiCadLibs/Jue/library/JueConnectors.lib)))
+      (uri ../.libs/kicad-lib-jue/library/JueConnectors.lib)))
   (nets
     (net (code 1) (name "Net-(C5-Pad1)")
       (node (ref X3) (pin HF))

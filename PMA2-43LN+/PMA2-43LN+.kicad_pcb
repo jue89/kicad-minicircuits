@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.2+e4-6225~38~ubuntu15.10.1-stable)
 
   (general
-    (links 69)
-    (no_connects 18)
-    (area 89.924999 89.924999 150.075001 120.075001)
+    (links 38)
+    (no_connects 0)
+    (area 82.442143 88.535 180.275002 121.315)
     (thickness 1.6)
     (drawings 13)
     (tracks 35)
     (zones 0)
-    (modules 23)
+    (modules 93)
     (nets 10)
   )
 
@@ -33,7 +33,7 @@
     (46 B.CrtYd user)
     (47 F.CrtYd user)
     (48 B.Fab user)
-    (49 F.Fab user)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -60,9 +60,9 @@
     (mod_text_width 0.15)
     (pad_size 3.2 3.2)
     (pad_drill 3.2)
-    (pad_to_mask_clearance 0.127)
+    (pad_to_mask_clearance 0.0762)
     (aux_axis_origin 120 105)
-    (grid_origin 120 105)
+    (grid_origin 90.028 90.014)
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010f0_80000001)
@@ -127,6 +127,875 @@
     (add_net "Net-(C5-Pad2)")
     (add_net "Net-(C6-Pad1)")
     (add_net "Net-(C6-Pad2)")
+  )
+
+  (module Capacitors_SMD:C_0805 (layer F.Cu) (tedit 5415D6EA) (tstamp 5761E2FE)
+    (at 104.76 106.016 90)
+    (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
+    (tags "capacitor 0805")
+    (path /5761D7DA)
+    (attr smd)
+    (fp_text reference C1 (at 0 1.905 90) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1n (at 0 0 90) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start -1.8 -1) (end 1.8 -1) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.8 1) (end 1.8 1) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.8 -1) (end -1.8 1) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 1.8 -1) (end 1.8 1) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 0.5 -0.85) (end -0.5 -0.85) (layer F.SilkS) (width 0.15))
+    (fp_line (start -0.5 0.85) (end 0.5 0.85) (layer F.SilkS) (width 0.15))
+    (pad 1 smd rect (at -1 0 90) (size 1 1.25) (layers F.Cu F.Paste F.Mask)
+      (net 2 "Net-(C1-Pad1)"))
+    (pad 2 smd rect (at 1 0 90) (size 1 1.25) (layers F.Cu F.Paste F.Mask)
+      (net 3 "Net-(C1-Pad2)"))
+    (model Capacitors_SMD.3dshapes/C_0805.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A67D)
+    (at 140.028 115.014)
+    (fp_text reference REF**1105 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A679)
+    (at 135.028 115.014)
+    (fp_text reference REF**195 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A675)
+    (at 130.028 115.014)
+    (fp_text reference REF**185 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A671)
+    (at 125.028 115.014)
+    (fp_text reference REF**175 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A66D)
+    (at 120.028 115.014)
+    (fp_text reference REF**165 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A669)
+    (at 115.028 115.014)
+    (fp_text reference REF**155 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A665)
+    (at 110.028 115.014)
+    (fp_text reference REF**145 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A661)
+    (at 105.028 115.014)
+    (fp_text reference REF**135 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A65D)
+    (at 100.028 115.014)
+    (fp_text reference REF**125 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A655)
+    (at 145.028 110.014)
+    (fp_text reference REF**1114 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A651)
+    (at 140.028 110.014)
+    (fp_text reference REF**1104 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A64D)
+    (at 135.028 110.014)
+    (fp_text reference REF**194 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A635)
+    (at 105.028 110.014)
+    (fp_text reference REF**134 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A631)
+    (at 100.028 110.014)
+    (fp_text reference REF**124 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A62D)
+    (at 95.028 110.014)
+    (fp_text reference REF**114 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A629)
+    (at 145.028 105.014)
+    (fp_text reference REF**1113 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A619)
+    (at 125.028 105.014)
+    (fp_text reference REF**173 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A615)
+    (at 120.028 105.014)
+    (fp_text reference REF**163 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A611)
+    (at 115.028 105.014)
+    (fp_text reference REF**153 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A601)
+    (at 95.028 105.014)
+    (fp_text reference REF**113 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5FD)
+    (at 145.028 100.014)
+    (fp_text reference REF**1112 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5F9)
+    (at 140.028 100.014)
+    (fp_text reference REF**1102 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5F5)
+    (at 135.028 100.014)
+    (fp_text reference REF**192 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5ED)
+    (at 125.028 100.014)
+    (fp_text reference REF**172 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5DD)
+    (at 105.028 100.014)
+    (fp_text reference REF**132 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5D9)
+    (at 100.028 100.014)
+    (fp_text reference REF**122 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5D5)
+    (at 95.028 100.014)
+    (fp_text reference REF**112 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5CD)
+    (at 140.028 95.014)
+    (fp_text reference REF**1101 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5C9)
+    (at 135.028 95.014)
+    (fp_text reference REF**191 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5C5)
+    (at 130.028 95.014)
+    (fp_text reference REF**181 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5C1)
+    (at 125.028 95.014)
+    (fp_text reference REF**171 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5BD)
+    (at 120.028 95.014)
+    (fp_text reference REF**161 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5B9)
+    (at 115.028 95.014)
+    (fp_text reference REF**151 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5B5)
+    (at 110.028 95.014)
+    (fp_text reference REF**141 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5B1)
+    (at 105.028 95.014)
+    (fp_text reference REF**131 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A5AD)
+    (at 100.028 95.014)
+    (fp_text reference REF**121 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A3C8)
+    (at 108.697 100.174)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A3C4)
+    (at 108.697 105.508)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A3BF)
+    (at 132.573 105.508)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A3B9)
+    (at 132.573 100.174)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A3A6)
+    (at 136.383 107.794)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A3A2)
+    (at 134.224 106.016)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A39E)
+    (at 135.24 103.857)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A396)
+    (at 132.7 108.175)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A38E)
+    (at 134.5034 108.9116)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A382)
+    (at 122.54 108.937)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A37E)
+    (at 125.08 108.937)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A376)
+    (at 127.62 108.81)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A372)
+    (at 130.16 109.064)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A36E)
+    (at 132.7 110.715)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A36A)
+    (at 130.16 110.842)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A366)
+    (at 127.62 111.096)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A362)
+    (at 125.08 110.842)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A35D)
+    (at 122.54 110.842)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A359)
+    (at 120.508 108.81)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A355)
+    (at 120.508 111.604)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A31A)
+    (at 118.476 110.969)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A316)
+    (at 113.65 108.81)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A312)
+    (at 116.19 109.064)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A30E)
+    (at 116.19 110.969)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A30A)
+    (at 113.65 111.096)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A306)
+    (at 111.11 109.064)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A302)
+    (at 111.11 110.842)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A2FE)
+    (at 108.57 110.842)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A2FA)
+    (at 108.57 109.064)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A2F4)
+    (at 107.173 108.048)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A2E8)
+    (at 106.5634 109.9784)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A2D9)
+    (at 105.776 106.016)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A2D5)
+    (at 104.76 108.175)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
+  )
+
+  (module JueVias:VIA-0.3 (layer F.Cu) (tedit 57515DE1) (tstamp 5762A2D1)
+    (at 104.76 103.984)
+    (fp_text reference REF**11 (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.3 (at 0 1.397) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GNDA))
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x02 (layer F.Cu) (tedit 54EA090C) (tstamp 576176DA)
@@ -330,45 +1199,16 @@
       (net 3 "Net-(C1-Pad2)") (zone_connect 1))
   )
 
-  (module Capacitors_SMD:C_0805 (layer F.Cu) (tedit 5415D6EA) (tstamp 5761E2FE)
-    (at 104.76 106.016 90)
-    (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
-    (tags "capacitor 0805")
-    (path /5761D7DA)
-    (attr smd)
-    (fp_text reference C1 (at 0 -2.1 90) (layer F.SilkS)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value 1n (at 0 2.1 90) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start -1.8 -1) (end 1.8 -1) (layer F.CrtYd) (width 0.05))
-    (fp_line (start -1.8 1) (end 1.8 1) (layer F.CrtYd) (width 0.05))
-    (fp_line (start -1.8 -1) (end -1.8 1) (layer F.CrtYd) (width 0.05))
-    (fp_line (start 1.8 -1) (end 1.8 1) (layer F.CrtYd) (width 0.05))
-    (fp_line (start 0.5 -0.85) (end -0.5 -0.85) (layer F.SilkS) (width 0.15))
-    (fp_line (start -0.5 0.85) (end 0.5 0.85) (layer F.SilkS) (width 0.15))
-    (pad 1 smd rect (at -1 0 90) (size 1 1.25) (layers F.Cu F.Paste F.Mask)
-      (net 2 "Net-(C1-Pad1)"))
-    (pad 2 smd rect (at 1 0 90) (size 1 1.25) (layers F.Cu F.Paste F.Mask)
-      (net 3 "Net-(C1-Pad2)"))
-    (model Capacitors_SMD.3dshapes/C_0805.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-  )
-
   (module Capacitors_SMD:C_0805 (layer F.Cu) (tedit 5415D6EA) (tstamp 5761E30A)
     (at 110.856 100.174 180)
     (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0805")
     (path /5761E051)
     (attr smd)
-    (fp_text reference C2 (at 0 -2.1 180) (layer F.SilkS)
+    (fp_text reference C2 (at 0 1.778 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 4µ7 (at 0 2.1 180) (layer F.Fab)
+    (fp_text value 4µ7 (at 0 0 180) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.8 -1) (end 1.8 -1) (layer F.CrtYd) (width 0.05))
@@ -394,10 +1234,10 @@
     (tags "capacitor 0805")
     (path /5761DBBD)
     (attr smd)
-    (fp_text reference C3 (at 0 -2.1 180) (layer F.SilkS)
+    (fp_text reference C3 (at 0 -1.778 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 100p (at 0 2.1 180) (layer F.Fab)
+    (fp_text value 100p (at 0 0 180) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.8 -1) (end 1.8 -1) (layer F.CrtYd) (width 0.05))
@@ -423,10 +1263,10 @@
     (tags "capacitor 0805")
     (path /5761ED83)
     (attr smd)
-    (fp_text reference C4 (at 0 -2.1 180) (layer F.SilkS)
+    (fp_text reference C4 (at 0 1.778 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 4µ7 (at 0 2.1 180) (layer F.Fab)
+    (fp_text value 4µ7 (at 0 0 180) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.8 -1) (end 1.8 -1) (layer F.CrtYd) (width 0.05))
@@ -452,10 +1292,10 @@
     (tags "capacitor 0805")
     (path /5761E8E5)
     (attr smd)
-    (fp_text reference C5 (at 0 -2.1 180) (layer F.SilkS)
+    (fp_text reference C5 (at 0 -1.778 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 100p (at 0 2.1 180) (layer F.Fab)
+    (fp_text value 100p (at 0 0 180) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.8 -1) (end 1.8 -1) (layer F.CrtYd) (width 0.05))
@@ -484,7 +1324,7 @@
     (fp_text reference C6 (at 0 -2.1 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n (at 0 2.1 270) (layer F.Fab)
+    (fp_text value 1n (at 0 0 270) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.8 -1) (end 1.8 -1) (layer F.CrtYd) (width 0.05))
@@ -510,10 +1350,10 @@
     (tags "Neosid, Inductor, SM-NE29, SMD1008, Festinduktivitaet, SMD,")
     (path /5761DA27)
     (attr smd)
-    (fp_text reference L1 (at -0.20066 -3.2004 90) (layer F.SilkS)
+    (fp_text reference L1 (at 2.794 0 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 10n (at 0 3.2004 90) (layer F.Fab)
+    (fp_text value 10n (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 2 smd rect (at 1.14554 0 90) (size 1.02108 2.54) (layers F.Cu F.Paste F.Mask)
@@ -528,10 +1368,10 @@
     (tags "Neosid, Inductor, SM-NE29, SMD1008, Festinduktivitaet, SMD,")
     (path /5761E4AF)
     (attr smd)
-    (fp_text reference L2 (at -0.20066 -3.2004 270) (layer F.SilkS)
+    (fp_text reference L2 (at -2.794 0 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 8n2 (at 0 3.2004 270) (layer F.Fab)
+    (fp_text value 8n2 (at 0 0 270) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 2 smd rect (at 1.14554 0 270) (size 1.02108 2.54) (layers F.Cu F.Paste F.Mask)
@@ -546,10 +1386,10 @@
     (tags "resistor 0805")
     (path /5761EB5E)
     (attr smd)
-    (fp_text reference R1 (at 0 -2.1 180) (layer F.SilkS)
+    (fp_text reference R1 (at 0 1.778 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 5k11 (at 0 2.1 180) (layer F.Fab)
+    (fp_text value 5k11 (at 0 0 180) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.6 -1) (end 1.6 -1) (layer F.CrtYd) (width 0.05))
@@ -575,10 +1415,10 @@
     (tags "resistor 0805")
     (path /5761DDB6)
     (attr smd)
-    (fp_text reference R2 (at 0 -2.1 270) (layer F.SilkS)
+    (fp_text reference R2 (at 0 1.778 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 49.9 (at 0 2.1 270) (layer F.Fab)
+    (fp_text value 49.9 (at 0 0 270) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.6 -1) (end 1.6 -1) (layer F.CrtYd) (width 0.05))
@@ -604,10 +1444,10 @@
     (tags "resistor 0805")
     (path /5761E96F)
     (attr smd)
-    (fp_text reference R3 (at 0 -2.1 270) (layer F.SilkS)
+    (fp_text reference R3 (at 0 -1.905 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 0 (at 0 2.1 270) (layer F.Fab)
+    (fp_text value 0 (at 0 0 270) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.6 -1) (end 1.6 -1) (layer F.CrtYd) (width 0.05))
@@ -630,10 +1470,10 @@
   (module MiniCircuits:MC1631 (layer F.Cu) (tedit 574C3C74) (tstamp 5761E37F)
     (at 120.508 110.207 270)
     (path /5761D6A4)
-    (fp_text reference U1 (at 0 -2.286 270) (layer F.SilkS)
+    (fp_text reference U1 (at -2.286 0 360) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value PMA2-43LN+ (at 0 2.413 270) (layer F.Fab)
+    (fp_text value PMA2-43LN+ (at 0 0 270) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.143 -1.524) (end -1.143 -1.524) (layer F.CrtYd) (width 0.05))

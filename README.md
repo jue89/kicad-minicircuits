@@ -6,6 +6,15 @@ Some parts from [Mini-Circuits®](http://www.minicircuits.com) brought onto two-
 
 ```
 git clone --recursive https://github.com/jue89/kicad-minicircuits.git
-cd kicad-minicircuitskicad-minicircuits
+cd kicad-minicircuits
 ./setup.sh
+```
+
+
+## Generating Gerber files
+
+I found a little python script for plotting Gerber files in the KiCad repository (demos/python\_scripts\_examples). It will be called by the plot Bash script
+
+```
+./plot.sh
 ```

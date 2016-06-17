@@ -2,4 +2,6 @@
 _autosave*
 *.gbr
 *.drl
+*.pdf
+*.rpt
 fp-lib-table

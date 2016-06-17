@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source ../ERA-6SM+/ERA-6SM+.sch)
-    (date "Mi 15 Jun 2016 18:06:06 CEST")
+    (date "Fr 17 Jun 2016 12:01:52 CEST")
     (tool "Eeschema 4.0.2+e4-6225~38~ubuntu15.10.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -40,7 +40,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 57616A69))
     (comp (ref R1)
-      (value "100 / 1W")
+      (value "69.8 / 0.5W")
       (footprint Resistors_SMD:R_1206)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
@@ -140,14 +140,14 @@
   (libraries
     (library (logical JueConnectors)
       (uri ../.libs/kicad-lib-jue/library/JueConnectors.lib))
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
     (library (logical mc-amplifiers)
       (uri ../.libs/kicad-lib-minicircuits/library/mc-amplifiers.lib))
     (library (logical mc-chokes)
       (uri ../.libs/kicad-lib-minicircuits/library/mc-chokes.lib))
     (library (logical device)
-      (uri /usr/share/kicad/library/device.lib)))
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib)))
   (nets
     (net (code 1) (name GNDA)
       (node (ref X1) (pin GND))

@@ -1,7 +1,7 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.2+e4-6225~38~ubuntu15.10.1-stable)
 
   (general
-    (links 99)
+    (links 97)
     (no_connects 0)
     (area 82.442143 88.535 180.275002 121.315)
     (thickness 1.6)
@@ -1327,7 +1327,7 @@
     (pad 4 smd rect (at 1.27 2.286 315) (size 0.762 1.27) (layers F.Cu F.Paste F.Mask))
   )
 
-  (module Resistors_SMD:R_1206 (layer F.Cu) (tedit 5415CFA7) (tstamp 576176E0)
+  (module Resistors_SMD:R_1206 (layer F.Cu) (tedit 5763CB29) (tstamp 576176E0)
     (at 124.572 111.223)
     (descr "Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 1206")
@@ -1336,7 +1336,7 @@
     (fp_text reference R1 (at 3.302 0) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "100 / 1W" (at 0 0) (layer F.Fab)
+    (fp_text value "69,8 / 0.5W" (at 0 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.2 -1.2) (end 2.2 -1.2) (layer F.CrtYd) (width 0.05))
@@ -1392,7 +1392,7 @@
       (net 1 GNDA))
   )
 
-  (gr_text 12V (at 112.38 111.223) (layer F.SilkS) (tstamp 57617CA4)
+  (gr_text 10V (at 112.38 111.223) (layer F.SilkS) (tstamp 57617CA4)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify right))
   )
   (gr_text GND (at 112.38 113.763) (layer F.SilkS) (tstamp 57617CC3)

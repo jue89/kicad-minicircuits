@@ -44,7 +44,7 @@ popt.SetScale(1)                #do not change it
 popt.SetMirror(False)
 popt.SetUseGerberAttributes(False)
 popt.SetUseGerberProtelExtensions(False)
-popt.SetExcludeEdgeLayer(False);
+popt.SetExcludeEdgeLayer(True);
 popt.SetScale(1)
 popt.SetUseAuxOrigin(False)
 
@@ -106,7 +106,7 @@ mergeNPTH = False
 drlwriter.SetOptions( mirror, minimalHeader, offset, mergeNPTH )
 
 metricFmt = True
-drlwriter.SetFormat( metricFmt )
+drlwriter.SetFormat( metricFmt, EXCELLON_WRITER.SUPPRESS_LEADING )
 
 genDrl = True
 genMap = True

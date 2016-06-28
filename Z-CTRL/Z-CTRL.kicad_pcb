@@ -2,7 +2,7 @@
 
   (general
     (links 68)
-    (no_connects 52)
+    (no_connects 0)
     (area 89.326809 89.724999 185.693002 150.061001)
     (thickness 1.6)
     (drawings 8)
@@ -872,7 +872,7 @@
       (net 4 "Net-(X2-PadHF)") (zone_connect 1))
   )
 
-  (gr_text "Coplanar Wave Guid with Ground Plane" (at 120.028 107.986) (layer F.SilkS)
+  (gr_text "Coplanar Wave Guide with Ground Plane" (at 120.028 107.986) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "Microstrip Line" (at 120.528 137.986) (layer F.SilkS)
